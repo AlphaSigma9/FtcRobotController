@@ -71,7 +71,7 @@ public class flyWheel extends LinearOpMode {
             double d = dt > 0 ? kD * ((error - lastError) / dt) : 0;
             lastError = error;
 
-            double power = clamp(ff + p + i + d, 0.0, 1.0);
+            double power = clamp(ff + p + i + d , 0.0, 1.0);
             flyWheel.setPower(power);
 
 
